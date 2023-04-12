@@ -14,12 +14,15 @@ Simple script to minify CSS and JS files.
 
 ## Usage
 
+There are 2 files in the repository, **minify.py** and **minify-rich.py**. The first one is the lighter version of my script (don't have to install any libraries), the second one is the same script, but with [rich][rich] library.
+You can add alias in the bashrc file to run the script from anywhere. With opening it and adding **alias minify="python3 /path/to/minify.py"** you can run the script with **minify** command.
+
 ### Install
 
 ```bash
 git clone https://github.com/foglar/minify-CSS-JS.git
 cd minify-CSS-JS
-pip3 install -r requirements.txt
+pip3 install rich.console # if you want to use rich version
 ```
 
 ### Run
@@ -51,3 +54,4 @@ If you select build mode, it will minify all files in the one file into the buil
 Minify CSS/JS is licensed under the MIT License - see the LICENSE file for details
 
 [czechLangBadge]: https://img.shields.io/badge/MADE%20IN-CZECH-red?style=for-the-badge
+[rich]: https://github.com/Textualize/rich
